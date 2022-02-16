@@ -1,0 +1,92 @@
+#footer{
+    height: 5rem;
+    background-color: black;
+    color: aliceblue;
+    font-size: large;
+    text-align: center;
+    padding-top: 1% ;
+}
+#newsback{
+    background-color: antiquewhite;
+}
+#icon{
+    width: 5rem;
+    height: 5rem;
+    margin-right: 20%;
+}
+#icon:hover{
+    filter: grayscale(1);
+}
+
+.newsimage {
+    height: 20rem;
+    width: 100%;
+}
+.newsimage:hover{
+    filter: grayscale(1);
+}
+.newscard{
+    box-shadow: 1px 1px 1px 1px rosybrown;
+    margin: 5% 0%;
+}
+.Newstitle{
+padding: 2% 2%;
+color: rgb(250, 9, 9);
+font-size: large;
+font-weight: bold;
+}
+.nodeco{
+    text-decoration: none;
+}
+.source,.source1{
+    padding: 2% 5%;
+    font-size: small;
+}
+.source{
+    color: blueviolet;
+    text-align: center;
+}
+.contry{
+    margin: 1% 2%;
+    font-size: medium;
+    font-weight: bold;
+}
+.contry:hover{
+    color: blue;
+}
+.egypt::before{
+    content:"";
+    background-image:url("./img/EG-Egypt-Flag-icon.png");
+    width: 30px;
+    height: 30px;
+    background-size: 30px 30px;
+    display: inline-block;
+    background-repeat: no-repeat;
+}
+.palstine::before{
+    content:"";
+    background-image:url("./img/PS-Palestinian-Territories-Flag-icon.png");
+    width: 30px;
+    height: 30px;
+    background-size: 30px 30px;
+    display: inline-block;
+    background-repeat: no-repeat;
+}
+.russia::before{
+    content:"";
+    background-image:url("./img/RU-Russia-Flag-icon.png");
+    width: 30px;
+    height: 30px;
+    background-size: 30px 30px;
+    display: inline-block;
+    background-repeat: no-repeat;
+}
+.england::before{
+    content:"";
+    background-image:url("./img/GB-ENG-England-Flag-icon.png");
+    width: 30px;
+    height: 30px;
+    background-size: 30px 30px;
+    display: inline-block;
+    background-repeat: no-repeat;
+}
