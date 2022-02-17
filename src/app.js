@@ -35,32 +35,38 @@ const News=(adress,callback)=>{
 }
 // home page route 
 app.get('/', (req, res) => {
-      
-      if (req.query.search) {
-        News(req.query.search,(error,News)=>{
-          console.log(req.query.search)
-          if(error){
-              return error
-          }
-          let articles =News.body.articles
-          res.render("index",{
-            articles
-          })
-        })
-        
-      } else {
-        News("us",(error,News)=>{
-          if (error) {
-            return error
-          } else {
-            let articles =News.body.articles
-            res.render("index",{
-              articles
+      if (req.query) {
+          if (req.query.search) {
+            News(req.query.search,(error,News)=>{
+              console.log(req.query.search)
+              if(error){
+                  return error
+              }
+              let articles =News.body.articles
+              res.render("index",{
+                articles
+              })
             })
-          }
+          
+        } else {
+          News("us",(error,News)=>{
+            if (error) {
+              return error
+            } else {
+              let articles =News.body.articles
+              res.render("index",{
+                articles
+              })
+            }
+          })
+          
+        }
+      } else {
+        res.render("404",{
+          img:"img/1_pq1NIL8rEvS2v7AbVFirjA.jpeg"
         })
-        
       }
+     
   })
 
 
